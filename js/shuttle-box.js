@@ -62,7 +62,7 @@ $(function () {
 
     // 生成弹框数据
     $.ajax({
-        url:'http://v3.apiadmin.fx551.com/api/5adf16dd4385c?flag=0',
+        url:'js/city.json',
         type:'get',
         dataType:'json',
         success:function(data){
