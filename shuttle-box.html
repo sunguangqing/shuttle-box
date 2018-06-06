@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 根据浏览器的屏幕大小自适应的展现合适的效果 -->
+    <meta name="applicable-device" content="pc,mobile"/>
+    <!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <!--自动选择更好的浏览器-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Title</title>
+    <link href="css/layui.css" rel="stylesheet" />
+    <link href="css/shuttle-box.css" rel="stylesheet" />
+</head>
+<body>
+
+<h1 class="frame-btn">穿梭框</h1>
+
+<!--选择可配送区域弹框-->
+<div class="frame-wrap freight-frame-wrap">
+    <div class="freight-frame bg-f">
+        <div class="title">选择可配送区域</div>
+        <div class="cont">
+            <div class="box frame_content">
+                <div class="fl frame_left">
+                    <div class="caption">可选省、市、区</div>
+                    <div class="context">
+                        <div id="freight-formwork"></div>
+                    </div>
+                </div>
+                <div class="fl frame_middle">
+                    <span class="left_btn"></span>
+                    <span class="right_btn"></span>
+                </div>
+                <div class="fr frame_right">
+                    <div class="caption">已选省、市、区</div>
+                    <div class="context">
+                        <div id="freight-formwork_checked"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btngroup text-center clearfix">
+                <input class="confirm" type="button" value="确定"><input class="cancel" type="button" value="取消">
+            </div>
+        </div>
+        <span class="close-frame-btn"></span>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="layer/layer.js"></script>
+<script src="js/shuttle-box.js"></script>
+</body>
+</html>
